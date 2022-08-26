@@ -8,26 +8,14 @@ const Home = () => {
     <Container>
       <div className="heading">Join As</div>
       <div className="content">
-        <div className="content">
-          <button
-            className="content-button"
-            onClick={() => {
-              navigate("/host");
-            }}
-          >
-            Host
-          </button>
-        </div>
-        <div className="content">
-          <button
-            className="content-button"
-            onClick={() => {
-              navigate("/audience");
-            }}
-          >
-            Audence
-          </button>
-        </div>
+        <button
+          className="content-button"
+          onClick={() => {
+            navigate("/host");
+          }}
+        >
+          Host
+        </button>
       </div>
     </Container>
   );

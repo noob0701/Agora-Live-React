@@ -16,19 +16,17 @@ export const Container = styled.div`
     font-size: 4rem;
   }
   .content {
-    display: grid;
-    grid-template-columns: 50% 50%;
-    .content {
-      .content-button {
-        height: 80vh;
-        width: 100vh;
-        background: #01000f;
-        color: white;
-        font-size: 3rem;
-        :hover {
-          background: #010000;
-          cursor: pointer;
-        }
+    margin: auto;
+    align-items: center;
+    .content-button {
+      height: 80vh;
+      width: 100vh;
+      background: #01000f;
+      color: white;
+      font-size: 3rem;
+      :hover {
+        background: #010000;
+        cursor: pointer;
       }
     }
   }
