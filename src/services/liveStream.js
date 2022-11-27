@@ -36,7 +36,7 @@ export const localUser = async (token, uuid, type, channel) => {
   if (type !== "live") {
     rtc.localAudioTrack = await AgoraRTC.createMicrophoneAudioTrack();
     rtc.localVideoTrack = await AgoraRTC.createCameraVideoTrack({
-      encoderConfig: "120p",
+      encoderConfig: "360p",
     });
     rtc.localVideoTrack.play("local-player");
     await rtc.client.publish([rtc.localAudioTrack, rtc.localVideoTrack]);
